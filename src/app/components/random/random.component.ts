@@ -24,6 +24,7 @@ export class RandomComponent {
         console.log(error)
       }
     })
-    this.service.getRandom().subscribe();
+    this.beService.getRandom().subscribe();
   }
 }
+

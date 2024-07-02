@@ -12,4 +12,8 @@ export class BypassInterceptorService {
   constructor(private handler: HttpBackend){
     this.http = new HttpClient(this.handler);
   }
+
+  getRandom(): Observable<any>{
+    return this.http.get<any>(`http://localhost:8080/random`);
+  }
 }

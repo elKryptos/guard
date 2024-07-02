@@ -6,11 +6,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RandomComponent } from './components/random/random.component';
 import { Interceptor } from './interceptors/interceptor';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    RandomComponent
+    RandomComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
